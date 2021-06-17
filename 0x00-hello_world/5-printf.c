@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - print the msj with printf
+ *main - print a msg with printf
  *
- *Return: finish
+ *Return: end program
  */
 int main(void)
 {
