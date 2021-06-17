@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* this will make the return to be the String */
+/*  main: this will make the input of the String */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
