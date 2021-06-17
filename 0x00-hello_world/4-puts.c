@@ -1,11 +1,13 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
+ *main - Prints a specified string
  *
- * Return: Always 0 (Success)
+ *Description: This function will print the string "Programming is like
+ *building a multilingual puzzle using the puts function.
+ *Return: 0 if the programming ran to completion
  */
 int main(void)
-{ puts("\"Programming is like building a multilingual puzzle");
-    return (0);
-}
+{
+puts ("\"Programming is like building a multilingual puzzle);
+      return (0);
+      }
