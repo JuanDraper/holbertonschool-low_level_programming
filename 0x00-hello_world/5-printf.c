@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- *main - print a msg with printf
+ *main - print a message with printf
  *
  *Return: end program
  */
