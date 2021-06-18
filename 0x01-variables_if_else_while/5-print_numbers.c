@@ -1,13 +1,18 @@
+
 #include <stdio.h>
+
 /**
- *main - the abc excep 2 letters
+ *main - the abc but 2 words
  *
-*Return: end program
-*/
+ *Return: end program
+ */
 int main(void)
 {
-int n
-for (n = 0 ; n <= 9 ; n++)
-printf ("%d" , n);
-return (0)
+	char n;
+
+	for (n = 'a'; n <= 'z'; n++)
+		if (!((n == 'q') || (n == 'e')))
+			putchar(n);
+	putchar('\n');
+	return (0);
 }
