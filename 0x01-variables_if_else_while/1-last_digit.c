@@ -8,7 +8,7 @@ int main(void)
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if ( %10n > 5)
+if (% 10n > 5)
 {
 printf ("Last digit of %d is %10d and is greater than 5 \n ", n);
 }
