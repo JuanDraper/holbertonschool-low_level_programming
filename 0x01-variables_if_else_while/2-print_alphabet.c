@@ -14,4 +14,4 @@ putchar (char);
 putchar (\n);
 }
 return (0);
-}      
+}
