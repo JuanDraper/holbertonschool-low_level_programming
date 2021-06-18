@@ -21,3 +21,4 @@ else
 printf ("Last digit of %d is %10d and is less than 6 and not 0 \n", n)
 }
 return (0);
+}
