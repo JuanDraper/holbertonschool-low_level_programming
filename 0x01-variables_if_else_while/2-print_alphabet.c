@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - alphabet in lowercase, followed by a new line
- *
+ * main : prints the alphabet one letter at a time *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-  int letter;
-
-  for (letter = ‘a’; letter <= ‘z’; letter++)
-    putchar(letter);
-  putchar (‘\n’);
-  return (0);
+int letter;
+for (letter = ‘a’; letter <= ‘z’; letter++)
+putchar(letter);
+putchar (‘\n’);
+return (0);
 }
