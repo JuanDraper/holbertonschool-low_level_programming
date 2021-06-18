@@ -3,17 +3,28 @@
 #include <stdio.h>
 
 /**
- * main : prints the alphabet one letter at a time *
- * Return: Always 0 (Success)
- *Description : this program shall print all letters, one line each
+ *main - Entry point
+  *
+ *Return: Always 0 (success)
+ *Description: This program prints all letters
+ *Return: Returns 0 
  */
 int main(void)
 {
-char letter;
-for (letter = "a"; letter <= "z"; letter++)
+char start = 'z';
+char aux;
+for (aux = 'a'; aux <= start; aux++)
+char letter = 'a';
+
+while (letter <= 'z')
 {
+putchar(aux);
 putchar(letter);
-putchar ('\n');
+letter++;
+}
+putchar('\n');
+{
+putchar(aux);
 }
 return (0);
 }
