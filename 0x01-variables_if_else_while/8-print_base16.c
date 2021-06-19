@@ -10,7 +10,7 @@ char hexa;
 for (hexa = '0' ; hexa <= '9' ; hexa++)
 putchar(i);
 for ( hexa = 'a' ; hexa <= 'f' ; hexa++)
-putchar(i);
+putchar(hexa);
 putchar('\n');
 return (0);
 }
