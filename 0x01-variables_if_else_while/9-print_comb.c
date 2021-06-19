@@ -1,22 +1,23 @@
 #include <stdio.h>
+
 /**
-*main - print numbers
-*
-*Return: end program
-*/
+ *main - print numbers
+ *
+ *Return: end program
+ */
 int main(void)
 {
-int n;
-for (n = 0 ; n <=9 ; n++)
-{
-putchar(n + '0');
-}
-if (n < 9)
+	int n;
 
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+	for (n = 0; n <= 9; n++)
+	{
+		putchar(n + '0');
+		if (n < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
