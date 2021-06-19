@@ -1,22 +1,21 @@
 #include <stdio.h>
-
 /**
- *main - print a message with printf
+ *main - print numbers
  *
  *Return: end program
  */
 int main(void)
 {
-  int i, i_;
-
+  int i,
+  int a
   for (i = 0; i <= 9; i++)
     {
-      for (i_ = i; i_ <= 9; i_++)
+      for (a = i; a <= 9; ia++)
 	{
-	  if (i != i_)
+	  if (i != a)
 	    {
 	      putchar(i + '0');
-	      putchar(i_ + '0');
+	      putchar(a+ '0');
 	      if (i < 8)
 		{
 		  putchar(',');
