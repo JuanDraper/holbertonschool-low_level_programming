@@ -10,7 +10,7 @@ int main(void)
   int a;
   for (i = 0; i <= 9; i++)
     {
-      for (a = i; a <= 9; ia++)
+      for (a = i; a <= 9; a++)
 	{
 	  if (i != a)
 	    {
