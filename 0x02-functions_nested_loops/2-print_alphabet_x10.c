@@ -1,11 +1,10 @@
-nclude "holberton.h"
+#include "holberton.h"
 
 /**
  * *print_alphabet_x10 - print a message
- * *
- * *Return: end program
- * 
  *
+ * *Return: end program
+ */
  void print_alphabet_x10(void)
  {
  int i = 0;
