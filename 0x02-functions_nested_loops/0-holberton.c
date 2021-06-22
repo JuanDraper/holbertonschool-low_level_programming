@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-*  *main - print a message 
-*   *
+*  *main - print a message
+*
 *    *Return: end program
-*    
+* 
 */
 int main(void)
 {
