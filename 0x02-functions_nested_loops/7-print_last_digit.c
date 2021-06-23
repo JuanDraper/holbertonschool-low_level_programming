@@ -14,9 +14,9 @@ return (digit);
 }
 else if (i == 0)
 {
-_putchar( i + '0');
+_putchar(i + '0');
 return (i);
 }
-_putchar(digit *(-1) + '0');
+_putchar(digit * (-1) + '0');
 return (digit * (-1));
 }
