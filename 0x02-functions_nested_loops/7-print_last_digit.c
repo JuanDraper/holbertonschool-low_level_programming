@@ -16,8 +16,6 @@ else if (i == 0)
 {
 _putchar( i + '0');
 }
-else 
-{
 _putchar(digit *(-1) + '0');
 return (digit * (-1));
 }
