@@ -24,7 +24,7 @@ if (r < 10 && m > 0)
 {
 _putchar(' ');
 }
-_putchar((res % 10) + '0');
+_putchar((r % 10) + '0');
 if (m < 9)
 {
 _putchar(',');
