@@ -5,6 +5,7 @@
 * Return : 1 , -1 , 0 
 */
 int print_sign(int n)
+{
 if ( n < 0)
 {
 _putchar ('-');
@@ -19,4 +20,5 @@ return (0);
 else 
 {
 _putchar ('+')
+}
 }
