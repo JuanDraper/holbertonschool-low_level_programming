@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
 *print_sign -prints the sign of number
-*
-*@n: number to discover the sign
+*@n: The character to print
 *
 *Return : 1 , -1 , 0
 */
