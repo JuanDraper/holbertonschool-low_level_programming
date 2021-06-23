@@ -18,7 +18,7 @@ _putchar( i + '0');
 }
 else 
 {
-_putchar(last *(-1) + '0');
-return (last * (-1));
+_putchar(digit *(-1) + '0');
+return (digit * (-1));
 }
 }
