@@ -19,6 +19,6 @@ return (0);
 }
 else 
 {
-_putchar ('+')
+_putchar ('+');
 }
 }
