@@ -8,7 +8,7 @@
 void print_to_98(int n)
 {
 int j = n;
-while (start != 98)
+while (j != 98)
 {
 printf("%d", j);
 putchar(',');
