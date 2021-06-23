@@ -14,7 +14,7 @@ return (digit);
 }
 else if (i == 0)
 {
-_putchar( n + '0');
+_putchar( i + '0');
 }
 else 
 {
