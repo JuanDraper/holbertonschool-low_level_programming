@@ -1,25 +1,24 @@
-nclude "holberton.h"
+#include "holberton.h"
 /**
- * * print_last_digit - tells the absolute value of an integer
- * * @i: int type number
- * * Return: absolute value of @n
- * */
+* print_last_digit - tells the absolute value of an integer
+* @i: int type number
+* Return: absolute value of @n
+*/
 int print_last_digit(int i)
 {
-	int digit = i % 10;
-	if (i > 0)
-	{
-	_putchar(digit + '0');
-	return (digit);
-	}
-	else if (i == 0)
-	{
-	_putchar( n + '0');
-	}
-	else 
-	{
-		_putchar(last *(-1) + '0');
-		return (last * (-1));
-	}
+int digit = i % 10;
+if (i > 0)
+{
+_putchar(digit + '0');
+return (digit);
 }
-	
+else if (i == 0)
+{
+_putchar( n + '0');
+}
+else 
+{
+_putchar(last *(-1) + '0');
+return (last * (-1));
+}
+}
