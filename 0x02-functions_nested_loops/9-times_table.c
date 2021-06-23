@@ -13,7 +13,7 @@ int n;
 int m;
 for (n = 0; n <= 9; n++)
 {
-for (m = 0; m <= 9; mu++)
+for (m = 0; m <= 9; m++)
 {
 int r = n * m;
 if (r >= 10)
