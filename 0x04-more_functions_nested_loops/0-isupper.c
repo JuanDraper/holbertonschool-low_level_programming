@@ -4,7 +4,7 @@
 /**
  *_isupper - Entry point
  *@c: charater to check
- *return if is lower or upper return 1 else 0
+ *Return: if is lower or upper return 1 else 0
  */
 int _isupper(int c)
 {
