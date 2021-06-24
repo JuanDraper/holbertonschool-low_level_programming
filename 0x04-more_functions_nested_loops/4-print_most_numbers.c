@@ -1,19 +1,17 @@
 #include "holberton.h"
 
 /**
-* print_most_numbers - Entry point
-*
-*Return: if is lower or upper return 1 else 0
-*/
+ *print_most_numbers - numbers
+ *
+ *Return: end program
+ */
 void print_most_numbers(void)
 {
 char i;
-if (i = '0'; i < '10'; i++)
+for (i = '0'; i <= '9'; i++)
 {
-if ( i != '2' && i != '4')
-{
-_putchar(i);
+if ((c != '2') && (c != '4'))
+_putchar(c);
 }
-}
-_putchar ('\n');
+_putchar('\n');
 }
