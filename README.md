@@ -1,1 +1,3 @@
-this dir is all about nested loops, just as the other one with pretty much the same name
+#!/bin/bash
+this is a repo
+# holbertonschool-low_level_programming
