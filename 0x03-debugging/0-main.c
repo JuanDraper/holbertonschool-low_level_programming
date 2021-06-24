@@ -1,10 +1,10 @@
 #include "holberton.h"
 /*
- *
- *  main - test the code
- *
- *  return - 0
- */
+*
+*  main - test the code
+*
+*  return - 0
+*/
 int main (void)
 {
 int i;
