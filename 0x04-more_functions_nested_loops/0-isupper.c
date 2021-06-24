@@ -1,8 +1,10 @@
+
 #include "holberton.h"
+
 /**
-* _isupper - return 1 if c is lowercase and returns 0 otherwise
-* @c: takes in a character
-* Return: 1 for uppercase, 0 for lowercase
+ *_isupper - Entry point
+ *@c: charater to check
+ *return if is lower or upper return 1 else 0
  */
 int _isupper(int c)
 {
