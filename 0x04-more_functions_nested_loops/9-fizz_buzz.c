@@ -24,7 +24,7 @@ if(i % 5 == 0)
 {
 printf("Buzz ");
 }
-if(i % 15 == 0))
+if(i % 15 == 0)
 {
 printf("Fizz Buzz ");
 }
