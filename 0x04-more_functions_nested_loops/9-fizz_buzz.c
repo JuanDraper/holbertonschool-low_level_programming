@@ -1,38 +1,33 @@
-#include "holberton.h"
 #include <stdio.h>
-/*
-* main - Fizz Buzz!
+#include "holberton.h"
+
+/**
+* main - FizzBuzz
 *
-*Description: nothing
+*Description: prints the numbers 1 - 100 
 *
-*
+*Return: 0
 */
 int main(void)
 {
-int i;
-for ( i = 0 ; i < 100 ; i++)
-{
-if( i == 0)
-{
-printf("%d ", i);
-}
-else if(i % 3 == 0)
-{
-printf("Fizz ");
-}
-if(i % 5 == 0)
-{
-printf("Buzz ");
-}
-if(i % 15 == 0)
-{
-printf("Fizz Buzz ");
-}
-else
-printf("%d " , i);
+int a;
 
+for (a = 1; a <= 100; a++)
+{
+if (a % 15 == 0)
+printf("FizzBuzz");
+else if (a % 3 == 0)
+printf("Fizz");
+else if (a % 5 == 0)
+printf("Buzz");
+else
+printf("%i", a);
+if (a < 100)
+printf(" ");
 }
+printf("\n");
 return (0);
+}
 }
 
 
