@@ -4,7 +4,7 @@
 /**
 * main - FizzBuzz
 *
-*Description: prints the numbers 1 - 100 
+*Description: prints the numbers 1 - 100
 *
 *Return: 0
 */
