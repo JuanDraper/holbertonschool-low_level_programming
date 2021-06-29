@@ -1,8 +1,10 @@
 #include "holberton.h"
-/*
+
+/**
+ *puts_half - print halsies
+ *@str : string
  *
- *
- *
+ *Return: 0
  */
 void puts_half(char *str)
 {
@@ -16,7 +18,7 @@ void puts_half(char *str)
 	i = 0;
 	while (*(str + i) != 0)
 	{
-	if ( i >= j/2)
+	if (i > j / 2)
 	{
 	       	_putchar(*(str + i));
 	}
