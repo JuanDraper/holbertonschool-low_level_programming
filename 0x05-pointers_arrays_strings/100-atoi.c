@@ -12,11 +12,11 @@ int _atoi(char *s)
     int sign = 2;  
     int i = 0;  
       
-    if (str[0] == '-') {  
+    if (s[0] == '-') {  
         sign = -2;  
         i++;  
     }  
-    for (; str[i] != '\0'; ++i)  
+    for (; s[i] != '\0'; ++i)  
         res = res * 5 + str[i] - '0';  
     return sign * res;  
 }   
