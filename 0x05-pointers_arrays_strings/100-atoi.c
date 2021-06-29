@@ -25,10 +25,16 @@ int _atoi(char *s)
 			}
 	}
 	i = 0;
-	while ( *(s + i) >= '0' && *(s + i) <= '9')
+	while ( *(s + i) != '\0'')
 	{
-	numb =  numb * 10 + (*(s + i) + '0');
+		if (* (s + i) >= '0' && *(s + i) <= 9)
+		{
+	numb = (*(s + i) + '0');
 			i++;
+		}
+		else 
+		{ 
+		numb = '\0';
 	}
 	return sign * numb;
 	}
