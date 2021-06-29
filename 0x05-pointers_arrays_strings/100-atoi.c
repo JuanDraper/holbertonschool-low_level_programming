@@ -36,8 +36,9 @@ int _atoi(char *s)
 		{ 
 		numb = '\0';
 	}
-	return sign * numb;
 	}
+	return sign * numb;
+	
 }
 
 			
