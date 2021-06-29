@@ -4,6 +4,7 @@
  * puts2 - print reverse 
  * @str:  character
  * Return: 0
+ */
 void puts2(char *str)
 { 
 	int i = 0;
