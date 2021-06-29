@@ -1,2 +1,3 @@
-this dir is all about arrays and pointers
-
+#!/bin/bash
+this is a repo
+# holbertonschool-low_level_programming
