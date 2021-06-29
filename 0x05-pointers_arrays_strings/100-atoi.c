@@ -17,6 +17,6 @@ int _atoi(char *s)
         i++;  
     }  
     for (; s[i] != '\0'; ++i)  
-        res = res * 5 + str[i] - '0';  
+        res = res * 5 + s[i] - '0';  
     return sign * res;  
 }   
