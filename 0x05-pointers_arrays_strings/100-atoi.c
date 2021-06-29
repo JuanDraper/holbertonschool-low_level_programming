@@ -29,12 +29,10 @@ int _atoi(char *s)
 	{
 		if (* (s + i) >= '0' && *(s + i) <= 9)
 		{
-	numb = (*(s + i) + '0');
+			numb *= 10;
+	numb  +=(*(s + i) + '0');
 			i++;
-		}
-		else 
-		{ 
-		numb = '\0';
+		
 	}
 	}
 	return sign * numb;
