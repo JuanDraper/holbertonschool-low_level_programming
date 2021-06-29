@@ -1,28 +1,22 @@
 #include "holberton.h"
-/*
- *
- *
- *
+
+/**
+ * puts_half - halfsies
+ * @str: string
+ * Description: smth
  */
+
 void puts_half(char *str)
 {
-	int i = 0;
-	int j;
-	while (*(str + i) != 0)
-	{
-		i++;
-		j = i -1;
-	}
-	i = 0;
-	while (*(str + i) != 0)
-	{
-	if ( i >= j/2)
-	{
-	       	_putchar(*(str + i));
-	}
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
 	i++;
+	for (i /= 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
-
-
