@@ -1,8 +1,9 @@
 #include "holberton.h"
-/*
- *
- *
- */
+
+/**
+ * puts2 - print reverse 
+ * @str:  character
+ * Return: 0
 void puts2(char *str)
 { 
 	int i = 0;
@@ -12,8 +13,8 @@ void puts2(char *str)
 		if (i % 2 == 0)
 		{
 			_putchar(str[i]);
-			i++;
 		}
+		i++;
 	}
 	_putchar('\n');
 }
