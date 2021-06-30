@@ -9,6 +9,23 @@
 
 char *_strcat(char *dest, char *src)
 {
-char united[] = (*dest + *src);
-return (dest);
+
+int i = 0;
+int j = 0;
+while (dest[i] != '\0')
+{
+	i++;
+
 }
+while(src[j] != '\0')
+{  
+       i++;
+	dest[i] = src[j];
+		j++;
+}
+if(i == sizeof(dest[i]))
+		{
+		dest[i] = '\0';
+		}
+		return (dest);
+		}
