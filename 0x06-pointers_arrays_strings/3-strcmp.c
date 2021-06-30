@@ -23,6 +23,6 @@ while( ( *s1 != '\0' && *s2 != '\0' ) && *s1 == *s2 )
 
     else
     {
-        return *s1 - *s;
+        return *s1 - *s2;
     }
 }
