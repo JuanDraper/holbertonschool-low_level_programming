@@ -6,7 +6,7 @@
  *
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *src)
 {
 int i = 0;
 while (src[i] != '\0')
@@ -16,5 +16,7 @@ while (src[i] != '\0')
 	{
 		src[i] -=32;
 	}
-	return src;
+
+}
+return src;
 }
