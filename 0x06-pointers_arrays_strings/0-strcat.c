@@ -17,9 +17,9 @@ while (dest[i] != '\0')
 	i++;
 
 }
-while(src[j] != '\0')
-{  
-       i++;
+while (src[j] != '\0')
+{
+i++;
 	dest[i] = src[j];
 		j++;
 }
