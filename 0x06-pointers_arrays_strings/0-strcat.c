@@ -23,9 +23,7 @@ while(src[j] != '\0')
 	dest[i] = src[j];
 		j++;
 }
-if(i == sizeof(dest[i]))
-		{
+
 		dest[i] = '\0';
-		}
 		return (dest);
 		}
