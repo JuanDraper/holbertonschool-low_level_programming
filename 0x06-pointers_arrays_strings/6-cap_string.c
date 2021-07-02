@@ -1,31 +1,38 @@
 #include "holberton.h"
 
 /**
- *cap_string - print a message with printf
- *@s : number
- *
- *Return: end program
+ * cap_string - Capitalize a string
+ * Description: This function capitalize a string. Separators of words:
+ * Space, tabulation, new line, ',', ';', '.', '!', '?', '"', '(', ')'
+ * '{', '}'
+ * @s: String to capitalize
+ * Return: @s capitalized
  */
 char *cap_string(char *s)
 {
-	int i, j, k, l, m;
-	int lis[] = {44, 59, 46, 33, 63, 32, 34, 40, 41, '{', '}', '\t', '\n',};
+	int i = 0;
+	int cpt = 0;
 
-	j = 65 - 97;
-	k = 0;
-	for (i = 0; s[i] != 0; i++)
+	while (*(s + i) != '\0')
 	{
-		k = 0;
-		for (l = 0; l < 12; l++)
-			k += (s[i] == lis[l]);
-		m += k;
-		if (((s[i] <= 'z') && (s[i] >= 'a')) && m)
+		if (
+			(*(s + i - 1) == ' ') || (*(s + i - 1) == '\t') ||
+			(*(s + i - 1) == '\n') || (*(s + i - 1) == ',') ||
+			(*(s + i - 1) == ';') || (*(s + i - 1) == '.') ||
+			(*(s + i - 1) == '!') || (*(s + i - 1) == '?') ||
+			(*(s + i - 1) == '"') || (*(s + i - 1) == '(') ||
+			(*(s + i - 1) == ')') || (*(s + i - 1) == '{') ||
+			(*(s + i - 1) == '}') || i == 0
+			)
 		{
-			s[i] += j;
-			m = 0;
+			cpt = 1;
 		}
-		if (m && !(k))
-			m = 0;
+		if (cpt == 1 && *(s + i) >= 97 && *(s + i) <= 122)
+		{
+			*(s + i) = *(s + i) - 32;
+		}
+		cpt = 0;
+		i++;
 	}
 	return (s);
 }
