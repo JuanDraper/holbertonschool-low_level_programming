@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ * _strncat - function is similar to the _strcat
+ * @dest: char pointer
+ * @src: char pointer
+ * @n: int
+ * Return: dest
  */
 
 	char *_strncat(char *dest, char *src, int n)
