@@ -8,18 +8,17 @@
  * @n: Number of bytes to copy
  * Return: @n bytes of @src
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i = 0;
 
-	int i;
-
-	i = 0;
-	while (*(src + i) != 0 && i < n)
+	while (i < n && *(dest + i) != '\0')
 	{
-		*(dest + i) = *(src + i);
+		if (*src != '\0')
+			*(dest + i) = *src++;
+		else
+			*(dest + i) = '\0';
 		i++;
 	}
-	*(dest + i) = *(src + i);
 	return (dest);
 }
