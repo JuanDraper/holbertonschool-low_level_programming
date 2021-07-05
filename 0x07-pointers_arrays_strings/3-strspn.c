@@ -1,8 +1,10 @@
 #include "holberton.h"
+
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strspn - search string for set of bytes
+ * @s: char string array
+ * @accept: char array to check bytes with
+ * Return: Number of bytes in the intial segmet
  */
 
 unsigned int _strspn(char *s, char *accept)
