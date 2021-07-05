@@ -4,7 +4,7 @@
   * print_chessboard - prints the tableboard
   *@a: to print
   * Description: int will print a chessboard
-  *
+  * Return: void
   */
 
 void print_chessboard(char (*a)[8])
