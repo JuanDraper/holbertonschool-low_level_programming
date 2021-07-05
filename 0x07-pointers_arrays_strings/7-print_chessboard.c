@@ -1,8 +1,9 @@
 #include "holberton.h"
+
  /**
-  *
-  *
-  *
+  * print_chessboard - prints the tableboard
+  *@a: to print
+  * Description: int will print a chessboard
   *
   */
 
