@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ * _strstr - locates a substring
+ *@haystack: a char
+ *@needle: the other char
+ * Return: end program
  */
 
 char *_strstr(char *haystack, char *needle)
