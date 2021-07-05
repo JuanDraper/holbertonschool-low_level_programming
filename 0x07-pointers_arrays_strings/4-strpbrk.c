@@ -18,4 +18,3 @@ unsigned int i, j;
 				return (&s[i]);
 	return (0);
 }
-					
