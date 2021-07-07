@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
+ *comp - function that returns the power of number
+ *@n: original number
+ *@y: counter to compare multiplication
  *
- *
- *
- *
+ *Return: square root
  */
 
 int find_square(int n, int i)
