@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *comp - function that returns the power of number
- *@n: original number
- *@y: counter to compare multiplication
+ *find_square -  returns the power of number
+ *@n: n
+ *@i: i
  *
  *Return: square root
  */
@@ -22,10 +22,11 @@ if (i * i == n)
        }
 
 /**
-*
-*
-*
-*/
+ *_sqrt_recursion - function that returns the power of number
+ *@n: number
+ *Return: the natural square root
+ */
+
  int _sqrt_recursion(int n)
  {
  return (find_square(n, 1));
