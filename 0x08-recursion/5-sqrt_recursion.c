@@ -17,7 +17,7 @@ if (i * i == n)
        {
        return (-1);
        }
-       return (n, i + 1);
+       return (find_square(n, i + 1));
        }
 
 /**
