@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _lengthOf - returns the length of a string.
+ * lengthOf - returns the length of a string.
  * @s: the string to count
  * Return: length of the string
  */
@@ -17,7 +17,7 @@ int lengthOf(char *s)
  * checker - helper function for is_palindrome
  * @str: the string
  * @i: length of string
- * @count: counter of recursion
+ * @j: counter of recursion
  * Return: 1 if string is a palindrome, 0 if it is not.
  */
 int checker(char *str, int i, int j)
