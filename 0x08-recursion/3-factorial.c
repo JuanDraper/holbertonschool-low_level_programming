@@ -1,12 +1,9 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
- *
- *
+ *factorial - return factorial
+ *@n: int number
+ *Return: factortial number
  */
 
 int factorial(int n)
