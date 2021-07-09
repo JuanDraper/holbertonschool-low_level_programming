@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - Prints addition
- * @argc: The number of arguments.
- * @argv: array of pointers the arguments.
+ * main - blablabla
+ * @argc: blabl
+ * @argv: blabla.
  *
  * Return: 1 or 0
  */
