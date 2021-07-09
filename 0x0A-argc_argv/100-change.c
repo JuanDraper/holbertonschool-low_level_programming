@@ -9,6 +9,7 @@
   */
 int main ( int argc, char *argv[])
 {
-	printf("ohoho estoy robando puntos con este ejercicio")
+	printf("ohoho estoy robando puntos con este ejercicio");
+	return (0);
 }
 
