@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - main 
- *@argc: blabla
- *@argv: blabla
- * Return: 0
- */
+* main - main
+*@argc: blabla
+*@argv: blabla
+* Return: 0
+*/
 
 int main(int argc, __attribute__((unused)) char *argv[])
 {
