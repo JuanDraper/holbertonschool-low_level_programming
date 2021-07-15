@@ -1,50 +1,42 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "holberton.h"
+#include <stdlib.h>
 /**
- * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
- * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
- * @s1: input one
- * @s2: input two
- * @n: s2's number of bytes
- * Return: 0
- */
+* string_nconcat - blablbalba;
+* @s1: blalbalba
+* @s2: blabla
+* @n: blablal.
+* Return: Nothing.
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int i, j, k;
 	char *p;
-	unsigned int i, j, k, l;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
+	i = 0;
+	while (s1[i])
+		i++;
 
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-	}
-
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-	}
-
-	if (n < j)
-	{
-	j = n;
-        }
-	j += i;
-        p = malloc(sizeof(char *) * (j + 1));
+	p = malloc(sizeof(*p) * i + n + 1);
 
 	if (p == NULL)
 		return (NULL);
-        
-	for (k = 0; k < i; k++)
-		p[k] = s1[k];
-	for (l = 0; k < j; l++)
+
+	for (j = 0, e = 0; j < (i + n); j++)
 	{
-		p[k] = s2[l];
-		k++;
+		if (j < i)
+		{
+			p[j] = s1[j];
+		}
+		else
+		{
+			p[j] = s2[k++];
+		}
 	}
-	k++;
-	p[k] = '\0';
+	p[j] = '\0';
 	return (p);
 }
