@@ -1,13 +1,13 @@
 #include "dog.h"
 
 /**
- *init_dog - a
- *@d: a
- *@name: a
- *@age: a
- *@owner: a
+ *init_dog - bla
+ *@d: bla
+ *@name: bla
+ *@age: bla
+ *@owner: bla
  *
- *Return: a
+ *Return: bla
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
