@@ -5,7 +5,7 @@ char *_strcpy(char *x, char *y);
 /**
  * new_dog - blaaaa
  * @name: blaaaa
- * @age: age 
+ * @age: age
  * @owner: owner
  *
  * Return: bla
