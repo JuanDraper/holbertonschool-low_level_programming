@@ -1,76 +1,78 @@
 #include "dog.h"
-#include <stdio.h>
-#include <stddef.h>
 #include <stdlib.h>
-
+int _strlen(char *s);
+char *_strcpy(char *x, char *y);
 /**
- *str_len - a
- *@str: a
+ * new_dog - blaaaa
+ * @name: blaaaa
+ * @age: age 
+ * @owner: owner
  *
- *Return: a
- */
-int str_len(char *str)
-{
-	if (str)
-	{
-		if (str[0] == 0)
-			return (1);
-		return (str_len(str + 1) + 1);
-	}
-	else
-		return (0);
-}
-/**
- *str_cpy - a
- *@str: a
- *
- *Return: a
- */
-char *str_cpy(char *str)
-{
-	char *p = NULL;
-	int i;
-
-	p = malloc(str_len(str));
-	if (p && str)
-	{
-		for (i = 0; str[i]; i++)
-			p[i] = str[i];
-	}
-	return (p);
-}
-/**
- *new_dog - a
- *@name: a
- *@age: a
- *@owner: a
- *
- *Return: a
+ * Return: bla
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p = NULL;
-	char *cp_name;
-	char *cp_owner;
+	dog_t *new_d;
 
-	cp_name = str_cpy(name);
-	if (!cp_name)
-		return (p);
-	cp_owner = str_cpy(owner);
-	if (!cp_owner)
+	new_d = malloc(sizeof(dog_t));
+	if (new_d == NULL)
+		return (NULL);
+	if (name == NULL)
+		new_d->name = NULL;
+	else
 	{
-		free(cp_name);
-		return (p);
+		new_d->name = malloc(_strlen(name) + 1);
+		if (new_d->name == NULL)
+		{
+			free(new_d);
+			return (NULL);
+		}
+		new_d->name = _strcpy(new_d->name, name);
 	}
-	p = malloc(sizeof(dog_t));
-	if (!p)
+	if (owner == NULL)
+		new_d->owner = NULL;
+	else
 	{
-		free(cp_name);
-		free(cp_owner);
-		return (p);
+		new_d->owner = malloc(_strlen(owner) + 1);
+		if (new_d->owner == NULL)
+		{
+			free(new_d->name);
+			free(new_d);
+			return (NULL);
+		}
+		new_d->owner = _strcpy(new_d->owner, owner);
 	}
-	p->name = cp_name;
-	p->age = age;
-	p->owner = owner;
-	return (p);
+	new_d->age = age;
+	return (new_d);
+}
+/**
+ * _strlen - blabla
+ * @s: bla la
+ *
+ * Return: blaaa
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+/**
+ * _strcpy - blaba
+ *
+ * @x: blabla
+ * @y: blabka
+ *
+ * Return: blabla
+ */
+char *_strcpy(char *x, char *y)
+{
+	char *a = x;
+
+	while (*y)
+		*a++ = *y++;
+	*a = '\0';
+	return (x);
 }
