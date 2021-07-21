@@ -2,13 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - blblablablblablablablablalbalblabla
- * @argc: blablar
+ * main - blabla
+ * @argc: ablabla
  * @argv: blabla
- *
- * Description: blablbal
- *
- * Return:
+ * Return: blabla
  */
 int main(int argc, char *argv[])
 {
