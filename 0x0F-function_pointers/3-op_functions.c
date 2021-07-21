@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
-
 /**
- * main - blabla
- * @argc: blablabla
- * @argv: blblabla
- * Return: blabla
+ * op_add -blabla
+ * @a: int blabla
+ * @b: blabla
+ *
+ * Description: blabla
+ * Return: bla bla
  */
 int op_add(int a, int b)
 {
