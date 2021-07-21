@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - blblar
+ * main - blblablablblablablablablalbalblabla
  * @argc: blablar
  * @argv: blabla
  *
