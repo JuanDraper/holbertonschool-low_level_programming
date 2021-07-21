@@ -3,12 +3,10 @@
 #include "3-calc.h"
 
 /**
- * op_add -blabla
- * @a: int blabla
- * @b: blabla
- *
- * Description: blabla
- * Return: bla bla
+ * main - blabla
+ * @argc: blablabla
+ * @argv: blblabla
+ * Return: blabla
  */
 int op_add(int a, int b)
 {
