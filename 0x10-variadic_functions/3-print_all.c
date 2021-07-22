@@ -3,43 +3,6 @@
 #include <stdlib.h>
 
 /**
- * print_all - blabla
- *@format: blblabal
- * Description: blabla
- */
-
-void print_all(const char * const format, ...)
-{
-	va_list vl;
-formatType ft[] = {
-	{"c", print_char},
-	{"i", print_int},
-	["f", print_float},
-	{"s", print_char_ptr},
-        };
-unsigned int i = 0, j;
-char *separator = "";
-
-va_start(vl, format);
-
-while (format != NULL && format[i])
-{
-j = 0;
-while (j < 4)
-  {
-	if (format[i] == *ft[j].type)
-	{
-		ft[j].f(separator, vl);
-	separator = ", ";
-        }
-	j++;
-  }
-  i++
-}
-va_end(vl);
-printf("\n");
-}
-/**
  * print_char - blabla
  *@separator: blabla
  *vl: blblabla
@@ -86,5 +49,40 @@ return;
 }
 printf("%s%s", separator, c);
 }
+/**
+ * print_all - blabla
+ *@format: blblabal
+ * Description: blabla
+ */
 
+void print_all(const char * const format, ...)
+{
+	va_list vl;
+formatType ft[] = {
+	{"c", print_char},
+	{"i", print_int},
+	["f", print_float},
+	{"s", print_char_ptr},
+        };
+unsigned int i = 0, j;
+char *separator = "";
 
+va_start(vl, format);
+
+while (format != NULL && format[i])
+{
+j = 0;
+while (j < 4)
+  {
+	if (format[i] == *ft[j].type)
+	{
+		ft[j].f(separator, vl);
+	separator = ", ";
+        }
+	j++;
+  }
+  i++
+}
+va_end(vl);
+printf("\n");
+}
