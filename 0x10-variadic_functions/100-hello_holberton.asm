@@ -1,17 +1,18 @@
-model tiny 
+global _start
 
-.code
+section .text
 
-MAIN PROC
-                       
-    MOV AH, 09h
-    MOV DX, offset message
+_start:
+  mov rax, 1        
+  mov rdi, 1        
+  mov rsi, msg 
+  mov rdx, msglen
+  syscall 
 
-    int 21h
-    MOV AH, 4ch
-    int 21h
+  mov rax, 60 
+  mov rdi, 0
+  syscall
 
-ENDP
-message db "Hello, Holberton $"
-
-END MAIN
+section .rodata
+  msg: db "Hello, Holberton", 10
+  msglen: equ $ - msg
