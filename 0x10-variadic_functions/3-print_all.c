@@ -3,45 +3,6 @@
 #include <stdlib.h>
 
 /**
-  * print_all - Prints all operation
-  * @format: The conversion specifier to prints
-  *
-  * Return: None
-  */
-void print_all(const char * const format, ...)
-{
-	va_list vl;
-	formatType ft[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_char_ptr}
-	};
-
-	unsigned int i = 0, j;
-	char *separator = "";
-
-	va_start(vl, format);
-
-	while (format != NULL && format[i])
-	{
-		j = 0;
-		while (j < 4)
-		{
-			if (format[i] == *ft[j].type)
-			{
-				ft[j].f(separator, vl);
-				separator = ", ";
-			}
-			j++;
-		}
-		i++;
-	}
-	va_end(vl);
-	puts("\n");
-}
-
-/**
   * print_char - Prints a char
   * @separator: string pointer
   * @ap: A list of variadic arguments
@@ -95,4 +56,43 @@ void print_char_ptr(char *separator, va_list vl)
 	}
 
 	printf("%s%s", separator, ar);
+}
+
+/**
+  * print_all - Prints all operation
+  * @format: The conversion specifier to prints
+  *
+  * Return: None
+  */
+void print_all(const char * const format, ...)
+{
+	va_list vl;
+	formatType ft[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_char_ptr}
+	};
+
+	unsigned int i = 0, j;
+	char *separator = "";
+
+	va_start(vl, format);
+
+	while (format != NULL && format[i])
+	{
+		j = 0;
+		while (j < 4)
+		{
+			if (format[i] == *ft[j].type)
+			{
+				ft[j].f(separator, vl);
+				separator = ", ";
+			}
+			j++;
+		}
+		i++;
+	}
+	va_end(vl);
+	puts("\n");
 }
