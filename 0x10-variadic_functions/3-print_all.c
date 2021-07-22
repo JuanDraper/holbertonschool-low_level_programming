@@ -74,7 +74,6 @@ void print_all(const char * const format, ...)
 		{"s", print_char_ptr},
 		{NULL, NULL}
 	};
-	va_list ap;
 	char *separator = "";
 	int i = 0;
 	int j = 0;
