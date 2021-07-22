@@ -71,28 +71,30 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_char_ptr}
+		{"s", print_char_ptr},
+		{NULL, NULL}
 	};
-
-	unsigned int i = 0, j;
+	va_list ap;
 	char *separator = "";
+	int i = 0;
+	int j = 0;
 
 	va_start(vl, format);
-
-	while (format != NULL && format[i])
+	while (format && format[i])
 	{
-		j = 0;
-		while (j < 4)
+		while (ft[j].type)
 		{
-			if (format[i] == *ft[j].type)
+			if (*ft[j].type == format[i])
 			{
-				ft[j].f(separator, vl);
+				printf("%s", separator);
+				ft[j].f(vl);
 				separator = ", ";
 			}
-			j++;
+			++j;
 		}
-		i++;
+		j = 0;
+		++i;
 	}
+	printf("\n");
 	va_end(vl);
-	puts("\n");
 }
