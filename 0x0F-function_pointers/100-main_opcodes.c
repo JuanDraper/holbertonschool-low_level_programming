@@ -9,27 +9,32 @@
   * Return: blabla
 */  
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
 
 	if (argc != 2)
+
+	{
+		printf("Error\n");
+		exit(1);
+	}
+
+	j = atoi(argv[1]);
+
+	if (j < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	if (atoi(argv[1]) < 0)
-	{
-		printf("Error\n");
-	}
 
-	for (i = 0; i < (atoi(argv[1]) - 1); i++)
+	for (i = 0; i < j; i++)
 	{
-         printf("%02hhx", *(( char *) main + i));
-		if (i < (atoi(argv[1]) - 1))
+		printf("%02hhx", *((unsigned char *) main + i));
+		if (i < j - 1)
 			printf(" ");
 		else
 			printf("\n");
 	}
-	return (0);           
-	}
+	return (0);
+}
