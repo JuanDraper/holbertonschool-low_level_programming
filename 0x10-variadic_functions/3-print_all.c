@@ -5,7 +5,7 @@
 /**
   * print_char - Prints a char
   * @separator: string pointer
-  * @ap: A list of variadic arguments
+  * @vl: A list of variadic arguments
   *
   * Return: None
   */
@@ -17,7 +17,7 @@ void print_char(char *separator, va_list vl)
 /**
   * print_int - Prints a integer
   * @separator: string pointer
-  * @ap: A list of variadic argument
+  * @vl: A list of variadic argument
   *
   * Return: None
   */
@@ -29,7 +29,7 @@ void print_int(char *separator, va_list vl)
 /**
   * print_float - Prints a float character
   * @separator: string pointer
-  * @ap: A list of variadic argument
+  * @vl: A list of variadic argument
   *
   * Return: None
   */
@@ -41,7 +41,7 @@ void print_float(char *separator, va_list vl)
 /**
   * print_char_ptr - Prints a char pointer content
   * @separator: string pointer
-  * @ap: A list of variadic argument
+  * @vl: A list of variadic argument
   *
   * Return: None
   */
