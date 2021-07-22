@@ -7,7 +7,7 @@
   * @argc: blabla
   * @argv: blabla
   * Return: blabla
-*/  
+*/
 
 int main(int argc, char *argv[])
 {
