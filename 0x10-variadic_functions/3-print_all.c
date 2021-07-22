@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * print_all - Entry Point
- * c = char, i = int, f = float, s = char * (if null print (nil))
- * @format: list of arg types
- * Return: 0
+ * print_all - blabla
+  * @format: blabla
+ * Return: blabla
  */
 void print_all(const char * const format, ...)
 {
