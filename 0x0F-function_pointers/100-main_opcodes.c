@@ -21,14 +21,12 @@ int main(int argc, char **argv)
 	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
-		exit(2);
-	}
-int j = atoi(argv[1]);
 
-	for (i = 0; i < j - 1; i++)
+
+	for (i = 0; i < (atoi(argv[1]) - 1); i++)
 	{
          printf("%02hhx", *((unsigned char *) main + i));
-		if (i < j - 1)
+		if (i < (atoi(argv[1]) - 1))
 			printf(" ");
 		else
 			printf("\n");
