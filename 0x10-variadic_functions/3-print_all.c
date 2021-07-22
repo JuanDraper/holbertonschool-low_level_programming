@@ -3,58 +3,11 @@
 #include <stdlib.h>
 
 /**
- * print_char - blabla
- *@separator: blabla
- *vl: blblabla
- *Return: blabla
- */
-void print_char(char *separator, va_list vl)
-{
-	printf("%s%c", separator, va_arg(vl, int);
-}
-/**
- * print_int - blabla
- *@separator: blax2
- *@vl: blax2
- * Return:blabla
- */
-void print_int(char *separator, va_list vl)
-{
-      printf("%s%i", separator, va_arg(vl, int);
-}
-/**
- * print_float - blabla
- *@separator: blax3
- *@vl: blax3
- * Return: blabla
- */
-void print_float(char *separator, va_list vl)
-{
-     printf("%s%f", separator, va_arg(vl , double);
-}
-/**
- * print_char_ptr - blabla
- *@separator: blax4
- *vl: blax4
- * Return: blabla
- */
-void print_char_ptr(char *separator, va_list vl)
-{
-char *c = va_arg(vl, char *);
-
-if (c == NULL)
-{
-printf("%s%s", separator, "(nil)");
-return;
-}
-printf("%s%s", separator, c);
-}
-/**
- * print_all - blabla
- *@format: blblabal
- * Description: blabla
- */
-
+  * print_all - Prints all operation
+  * @format: The conversion specifier to prints
+  *
+  * Return: None
+  */
 void print_all(const char * const format, ...)
 {
 	va_list vl;
@@ -77,7 +30,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *ft[j].type)
 			{
-				ft[j].f(separator, ap);
+				ft[j].f(separator, vl);
 				separator = ", ";
 			}
 			j++;
@@ -85,5 +38,61 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(vl);
-	printf("\n");
+	puts("\n");
+}
+
+/**
+  * print_char - Prints a char
+  * @separator: string pointer
+  * @ap: A list of variadic arguments
+  *
+  * Return: None
+  */
+void print_char(char *separator, va_list vl)
+{
+	printf("%s%c", separator, va_arg(vl, int));
+}
+
+/**
+  * print_int - Prints a integer
+  * @separator: string pointer
+  * @ap: A list of variadic argument
+  *
+  * Return: None
+  */
+void print_int(char *separator, va_list vl)
+{
+	printf("%s%i", separator, va_arg(vl, int));
+}
+
+/**
+  * print_float - Prints a float character
+  * @separator: string pointer
+  * @ap: A list of variadic argument
+  *
+  * Return: None
+  */
+void print_float(char *separator, va_list vl)
+{
+	printf("%s%f", separator, va_arg(vl, double));
+}
+
+/**
+  * print_char_ptr - Prints a char pointer content
+  * @separator: string pointer
+  * @ap: A list of variadic argument
+  *
+  * Return: None
+  */
+void print_char_ptr(char *separator, va_list vl)
+{
+	char *ar = va_arg(vl, char *);
+
+	if (ar == NULL)
+	{
+		printf("%s%s", separator, "(nil)");
+		return;
+	}
+
+	printf("%s%s", separator, ar);
 }
