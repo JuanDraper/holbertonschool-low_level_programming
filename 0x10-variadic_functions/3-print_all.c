@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	char *separator = ", ";
 	char *c;
 
-	va_start(valist, format);
+	va_start(vl, format);
 
 	while (format && format[i])
 		i++;
