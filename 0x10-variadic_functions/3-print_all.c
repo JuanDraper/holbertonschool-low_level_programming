@@ -87,7 +87,7 @@ void print_all(const char * const format, ...)
 			if (*ft[j].type == format[i])
 			{
 				printf("%s", separator);
-				ft[j].f(vl);
+				ft[j].f(separator, vl);
 				separator = ", ";
 			}
 			++j;
