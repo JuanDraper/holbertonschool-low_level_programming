@@ -25,4 +25,4 @@ int main(int argc, char **argv)
 	}
 	for (i = 0; i < atoi(argv[1]) - 1; i++)
                     ;
-]
+}
