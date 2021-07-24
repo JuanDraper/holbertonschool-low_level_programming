@@ -14,11 +14,11 @@ typedef struct getFunc
 {
 	char *type;
 	int (*f)(char *format, va_list)
-}selector1
+}selector
 /**
  * ACA TE DEJO COMO SE IMPLEMENTA LO DE ARRIBA que tiene que ir en algun achivo separado:
  *
- * getFunc a[] = {
+ * selector a[] = {
  * {"%c" , funcion de char},
  * {"%d" , funcion de int},
  * {"%i" , idem arriba},
