@@ -13,7 +13,7 @@ int print_u(unsigned int *p)
 	unsigned int *n;
 	int count;
 
-	*n = p; 
+	n = p; 
 	m = 1000000000; /* (10 ^ 9) */
 	a[0] = n / m;
 	for (i = 1; i < 10; i++)
