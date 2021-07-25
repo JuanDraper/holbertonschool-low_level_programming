@@ -9,7 +9,8 @@ int _bin(unsigned int *p)
 {
 	int count = 0, i;
 	int *arr;
-	unsigned int *n = p ;
+	unsigned int *n;
+	n = p;
 	unsigned int tmp = n;
 
 	while (n / 2 != 0)
