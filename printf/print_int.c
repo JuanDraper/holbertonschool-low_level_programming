@@ -65,7 +65,8 @@ unint = -number;
  */
 int printnum( int *p)
 {
-	int *number =p
+	int *number;
+	number = p;
 	int num;
 	(void)format;
 i
