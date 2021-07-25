@@ -43,7 +43,8 @@ int printhex( int *p)
  */
 int printHEX(int *p )
 {
-	unsigned int *NUM =p;
+	unsigned int *NUM;
+	NUM = p;
 	unsigned int NUM2;
 	int I, I2, COPY, CONT = 0;
 	char *NUMHEX;
