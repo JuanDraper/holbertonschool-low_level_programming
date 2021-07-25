@@ -9,7 +9,8 @@
 
 int print_R(char *p)
 {
-	char *str = p;
+	char *str;
+	str = p;
 	unsigned int i, j;
 	int count = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
