@@ -6,7 +6,8 @@
  */
 int printhex( int *p)
 {
-	unsigned int *num = p;
+	unsigned int *num;
+	num = p;
 	unsigned int num2;
 	int i, i2, copy, cont = 0;
 	char *numhex;
