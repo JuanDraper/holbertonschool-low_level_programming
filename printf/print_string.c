@@ -7,7 +7,8 @@
  */
 int printstr(char *p)
 {
-	char *str = p;
+	char *str;
+	str = p;
 	int cont;
 
 	if (str == NULL)
