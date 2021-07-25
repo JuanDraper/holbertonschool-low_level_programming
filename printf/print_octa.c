@@ -6,7 +6,8 @@
  */
 int printocta( int *p)
 {
-	unsigned int *num =p;
+	unsigned int *num;
+	num =p;
 	unsigned int copy;
 	char *octa;
 	int i, i2 = 0, cont = 0;
