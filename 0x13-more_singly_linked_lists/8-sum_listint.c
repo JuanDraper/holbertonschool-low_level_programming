@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
+ * sum_listint - blablal
+ * @head: blablabalb
  *
- *
+ * Return: blalba
  */
 int sum_listint(listint_t *head)
 {
