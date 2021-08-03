@@ -1,8 +1,8 @@
 #include "lists.h"
  /**
-  *
-  *
-  *
+  *pop_listint - blablbal
+  *@head: babla
+  *Return: blabla
   *
   */
 
