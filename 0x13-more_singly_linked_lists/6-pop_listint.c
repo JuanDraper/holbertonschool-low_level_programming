@@ -1,10 +1,10 @@
 #include "lists.h"
- /**
-  *pop_listint - blablbal
-  *@head: babla
-  *Return: blabla
-  *
-  */
+
+/**
+ * pop_listint - blablabla
+ * @head: blabalbla
+ * Return: blabla
+ */
 
 int pop_listint(listint_t **head)
 {
