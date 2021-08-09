@@ -19,20 +19,20 @@ int append_text_to_file(const char *filename, char *text_content)
 	i = open(filename, O_APPEND | O_WRONLY);
 	if (i == -1)
 		return (-1);
-	
+
 	if (text_content == NULL)
 	{
 		close(i);
 		return (1);
 	}
-	
+
 	for (j = 0; text_content[j] != '\0'; j++)
 		;
-		
+	
 	k = write(i, text_content, j);
 	if (k < 1)
 		return (-1);
-		
+
 	close(i);
 	return (1);
 }
