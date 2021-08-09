@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *create_file - blabla
+ *@filename: blaba
+ *@text_content: blbalba
+ *Return: blbalb
  */
 
 int create_file(const char *filename, char *text_content)
