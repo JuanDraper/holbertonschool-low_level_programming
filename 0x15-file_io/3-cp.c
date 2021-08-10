@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	}
 	j = open(argv[2], O_CREAT | O_EXCL | O_WRONLY, 0664);
 	if (j < 0)
-		fd2 = open(argv[2], O_TRUNC | O_WRONLY);
+		j = open(argv[2], O_TRUNC | O_WRONLY);
 	if (j == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	while (r)
