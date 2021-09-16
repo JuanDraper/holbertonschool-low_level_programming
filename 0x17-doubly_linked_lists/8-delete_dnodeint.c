@@ -1,20 +1,21 @@
 #include "lists.h"
 /**
- *
- *
- *
+ * delete_dnodeint_at_index - blabla
+ * @head: blabla
+ * @index: blabla
+ * Return: blabla
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *i = *head;
 	dlistint_t *j;
 
-	if(!head || !*head)
+	if (!head || !*head)
 		return (-1);
-	if(!index)
+	if (!index)
 	{
 		*head = i->next;
-		if(i->next)
+		if (i->next)
 			i->next->prev = NULL;
 		free(i);
 		return (1);
