@@ -32,11 +32,10 @@ hash_node_t *make_new_hashnode(const char *key, const char *value)
 
 
 /**
- * hash_table_set - 
- * @ht: 
- * @key: 
- * @
- *
+ * hash_table_set - function to set the table
+ * @ht:the hash table
+ * @key: the key
+ * @value: the value
  * Return: 1
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
