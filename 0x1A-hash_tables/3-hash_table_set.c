@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * make_hash_node -  makes hash node
+ * make_new_hashnode -  makes hash node
  * @key: key for the node
  * @value: value for the node
  * Return: the new node, or NULL on failure
@@ -43,7 +43,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx;
 	hash_node_t *nd, *tmp;
 	char *newValue;
-	
+
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
 	    key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
@@ -62,7 +62,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
-        nd = make_new_hashnode(key, value);
+	nd = make_new_hashnode(key, value);
 	if (nd == NULL)
 		return (0);
 	nd->next = ht->array[idx];
