@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
 /**
 * free_list - function to free the linked list.
 * @head: first eleement of list pointer.
