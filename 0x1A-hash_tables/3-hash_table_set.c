@@ -1,6 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
-#include <string.h>
 /**
 * check_dupkeys - checks for duplicated keys.
 * @h: Head node.
@@ -63,5 +61,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!check_dupkeys(ht->array[index], key, value))
 		if (!add_node(&(ht->array[index]), key, value))
 			return (0);
-		return (1);
+	return (1);
 }
