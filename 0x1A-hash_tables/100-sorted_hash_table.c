@@ -75,7 +75,7 @@ const char *value)
 	return (new);
 }
 /**
-* hash_table_set - Adds or updates an element on a hash table.
+* shash_table_set - Adds or updates an element on a hash table.
 * @ht: Hash table.
 * @key: Key of new element
 * @value: Value of new element.
