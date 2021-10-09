@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 #include <stdio.h>
 /**
-* print_list - print a list 
+* print_list - print a list
 * @h: the list to be printed.
 * Return: the quantity of nodes.
 */
